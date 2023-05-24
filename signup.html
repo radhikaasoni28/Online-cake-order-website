@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="signup.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+        <link rel="stylesheet" href="style.css">  
+    </head>
+    <body>
+        <!-- header section start here  -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <h1 class="logoName">Sweet Cake Bakery</h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="home.php#home">home</a>
+            <a href="home.php#product">product</a>
+            <a href="home.php#blogs">blogs</a>
+            <a href="home.php#review">review</a>
+            <a href="home.php#order">order</a>
+            <a href="home.php#contact">contact</a>
+        </nav>
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+            <a href="login.php"> <i class="fa fa-user-circle-o" aria-hidden="true"></i>    
+            </a> 
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+    </header>
+    <!-- header section end here  -->
+
+        <section>
+            <div class="container" >  
+                <div class="left_div" >
+                        <h1 id="welcome">Welcome Back !</h1>
+                        <p id="para">
+                            <br>
+                            To keep connected with us please login with personal info
+                        </p>  <br> <br>
+                        <button class="button_sign_in " onclick="location.href='login.html'">Sign In</button>
+                </div>
+
+
+                <div class="right_div" >
+                    <label for="" class="create_account"> Create Account </label>
+                    <form action="send.php" method="get" >
+                        <div class="inputBox" class="atext">
+                            <input type="text" required="required" name="usernm" >
+                            <span> Name </span>
+                        </div>
+                        <div class="inputBox" class="atext">
+                            <input type="email" name ="email" required="required" class="text"  >
+                            <span>Email </span>
+                        </div>
+                        <div class="inputBox" class="atext" >
+                            <input type="password" required="required" id="pw" name="pw" autocomplete="off">
+                            <span>Password </span>
+                        </div>
+                        <div class="inputBox" class="atext" >
+                            <input type="password" required="required" id="confirmpw" name="confirmpw" autocomplete="off"  >
+                            <span>Confirm Password </span>
+                        </div>
+                        <input type="submit" class="button " name = "register" autocomplete="off" ></button>
+                        </form>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    
+</html>
